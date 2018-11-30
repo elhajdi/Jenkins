@@ -36,6 +36,7 @@ public class HelloWithTestsIT {
         HelloApp.main(args);
 
         String thrice = Hello.HELLO + "\n" + Hello.HELLO + "\n" + Hello.HELLO + "\n";
+        
         assertThat(out.getLog(), is(equalTo(thrice)));
     }
 }
